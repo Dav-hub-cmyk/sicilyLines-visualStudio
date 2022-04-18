@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace projetSicilylines.Model
+namespace sicilylines.DAL
 {
     class ConnexionSql
     {
@@ -122,12 +122,7 @@ namespace projetSicilylines.Model
             return (mysqlCom);
             
         }
-         public MySqlCommand reqExec(string req)
-        {
-            MySqlCommand mysqlCom = new MySqlCommand(req, this.oleCn);
-            return (mysqlCom);
-            
-        }
+
         
         
 

@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace projetSicilylines
+namespace sicilylines
 {
     public partial class Form1 : Form
     {
+
+        private List<Liaison> lstli = new List<Liaison>();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

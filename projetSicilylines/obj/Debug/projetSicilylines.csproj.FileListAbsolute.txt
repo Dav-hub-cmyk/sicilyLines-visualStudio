@@ -31,3 +31,10 @@ D:\Hamidou\TP\TP C#\projetc#SICILYlINES\sicilylines-solution\projetSicilylines\b
 D:\Hamidou\TP\TP C#\projetc#SICILYlINES\sicilylines-solution\projetSicilylines\bin\Debug\System.Numerics.Vectors.xml
 D:\Hamidou\TP\TP C#\projetc#SICILYlINES\sicilylines-solution\projetSicilylines\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Hamidou\TP\TP C#\projetc#SICILYlINES\sicilylines-solution\projetSicilylines\obj\Debug\projetSicilylines.csproj.CopyComplete
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.csproj.AssemblyReference.cache
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\sicilylines.Form1.resources
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.Properties.Resources.resources
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.csproj.GenerateResource.cache
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.csproj.CoreCompileInputs.cache
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.exe
+C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.pdb

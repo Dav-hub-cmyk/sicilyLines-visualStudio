@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using MySql.Data;
 using System.Windows.Forms;
 
-namespace Liaison.DAL
+namespace sicilylines.DAL
 {
     class LiaisonDAO
     {
@@ -14,7 +15,7 @@ namespace Liaison.DAL
         private MySqlCommand Ocom;
 
 
-        public Liaison getLiaison(int id)
+        public Liaison getLiaison(int unId)
         {
             try
             {
@@ -28,7 +29,7 @@ namespace Liaison.DAL
                 maConnexionSql.openConnection();
 
 
-                Ocom = maConnexionSql.reqExec("Select * from liaison where id = " + id);
+                Ocom = maConnexionSql.reqExec("Select * from liaison where id = " + unId);
 
 
                 MySqlDataReader reader1 = Ocom.ExecuteReader();
@@ -37,16 +38,35 @@ namespace Liaison.DAL
                 while (reader1.Read())
                 {
 
-                    int id = (int)reader1.GetValue(0);
+                    int id_li = (int)reader1.GetValue(0);
                     string uneduree = (string)reader1.GetValue(1);
                     int un_id_secteur = (int)reader1.GetValue(2);
                     string port_dep = (string)reader1.GetValue(3);
                     string port_ar = (string)reader1.GetValue(3);
 
-                    li = new Liaison(id, uneduree, un_id_secteur, port_dep, port_ar);
+                    li = new Liaison(id_li, uneduree, un_id_secteur, port_dep, port_ar);
 
 
                 }
+                
+
+
+                reader1.Close();
+
+                maConnexionSql.closeConnection();
+
+                return (li);
+
             }
+
+            catch (Exception emp)
+            {
+
+                MessageBox.Show(emp.Message);
+
+            }
+
+        }
+
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace projetSicilylines.Model
+namespace sicilylinnes.DAL
 {
     class Fabrique
     {

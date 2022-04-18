@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace projetSicilylines.Model
+namespace sicilylines
 {
+    [Serializable]
     class Liaison
     {
         private int id_liaison;
@@ -15,9 +16,9 @@ namespace projetSicilylines.Model
         private string port_arrivee;
 
 
-        public Liaison(int id,string uneduree, int un_id_secteur,string port_dep,string port_ar)
+        public Liaison(int id_li,string uneduree, int un_id_secteur,string port_dep,string port_ar)
         {
-            this.id_liaison = id;
+            this.id_liaison = id_li;
             this.duree = uneduree;
             this.id_secteur = un_id_secteur;
             this.port_depart = port_dep;
@@ -28,9 +29,9 @@ namespace projetSicilylines.Model
 
         }
 
-        public int id
+        public int id_li
         {
-            get { return id; }
+            get { return id_li; }
 
         }
 
@@ -59,7 +60,7 @@ namespace projetSicilylines.Model
 
         {
 
-            return (this.id + "   " +this.id_secteur +" " + this.duree + " " + this.port_depart + " " + this.port_arrivee);
+            return (this.id_li + "   " +this.id_secteur +" " + this.duree + " " + this.port_depart + " " + this.port_arrivee);
         }
 
 

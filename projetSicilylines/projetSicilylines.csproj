@@ -89,8 +89,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\ConnexionSQL.cs" />
-    <Compile Include="Model\Fabrique.cs" />
+    <Compile Include="DAL\LiaisonDAO.cs" />
+    <Compile Include="DAL\ConnexionSql.cs" />
+    <Compile Include="DAL\Fabrique.cs" />
+    <Compile Include="Model\Liaison.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
