@@ -62,7 +62,7 @@ namespace sicilylines
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(45, 148);
+            this.label2.Location = new System.Drawing.Point(57, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(233, 32);
             this.label2.TabIndex = 2;
@@ -92,7 +92,7 @@ namespace sicilylines
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(489, 148);
+            this.label4.Location = new System.Drawing.Point(870, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 32);
             this.label4.TabIndex = 7;
@@ -129,11 +129,11 @@ namespace sicilylines
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(482, 250);
+            this.dataGridView2.Location = new System.Drawing.Point(876, 250);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(372, 220);
+            this.dataGridView2.Size = new System.Drawing.Size(256, 220);
             this.dataGridView2.TabIndex = 6;
             // 
             // dg1
@@ -144,7 +144,7 @@ namespace sicilylines
             this.dg1.Name = "dg1";
             this.dg1.RowHeadersWidth = 51;
             this.dg1.RowTemplate.Height = 24;
-            this.dg1.Size = new System.Drawing.Size(372, 220);
+            this.dg1.Size = new System.Drawing.Size(739, 220);
             this.dg1.TabIndex = 5;
             this.dg1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 

@@ -44,8 +44,8 @@ namespace sicilylines.DAL
                     int num_li = (int)reader1.GetValue(0);
                     string uneduree = (string)reader1.GetValue(1);
                     int un_id_secteur = (int)reader1.GetValue(2);
-                    string port_dep = (string)reader1.GetValue(3);
-                    string port_ar = (string)reader1.GetValue(3);
+                    int port_dep = (int)reader1.GetValue(3);
+                    int port_ar = (int)reader1.GetValue(3);
 
                     li = new Liaison(num_li, uneduree, un_id_secteur, port_dep, port_ar);
 
@@ -102,8 +102,8 @@ namespace sicilylines.DAL
                     int num_li = (int)reader.GetValue(0);
                     string uneduree = (string)reader.GetValue(1);
                     int un_id_secteur = (int)reader.GetValue(2);
-                    string port_dep = (string)reader.GetValue(3);
-                    string port_ar = (string)reader.GetValue(3);
+                    int port_dep = (int)reader.GetValue(3);
+                    int port_ar = (int)reader.GetValue(4);
 
                     l = new Liaison(num_li, uneduree, un_id_secteur, port_dep, port_ar);
 

@@ -29,6 +29,7 @@ namespace sicilylines
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             lstli = monManager.chargementLIBD();
 
             if (lstli.Count != 0) { rafraichirGridView(0); }

@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Mrg.cs" />
     <Compile Include="DAL\LiaisonDAO.cs" />
     <Compile Include="DAL\ConnexionSql.cs" />
     <Compile Include="DAL\Fabrique.cs" />
@@ -134,8 +135,6 @@
   <ItemGroup>
     <None Include="Resources\sicile2.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
