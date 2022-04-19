@@ -14,15 +14,17 @@ namespace sicilylines
         private int id_secteur;
         private string port_depart;
         private string port_arrivee;
+        private string monP;
 
 
-        public Liaison(int id_li,string uneduree, int un_id_secteur,string port_dep,string port_ar)
+        public Liaison(int id_li,string uneduree, int un_id_secteur,string port_dep,string port_ar,string monPE)
         {
             this.id_liaison = id_li;
             this.duree = uneduree;
             this.id_secteur = un_id_secteur;
             this.port_depart = port_dep;
             this.port_arrivee = port_ar;
+            this.monP = monPE;
         }
         public Liaison()
         {
