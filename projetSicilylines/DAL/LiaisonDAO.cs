@@ -131,21 +131,27 @@ namespace sicilylines.DAL
         }
 
 
-        /*public void deleteLiaison()
+        public void deleteLiaison(Liaison ls)
         {
             try
             {
                 maConnexionSql = ConnexionSql.getInstance(Fabrique.ProviderMysql, Fabrique.DataBaseMysql, Fabrique.UidMysql, Fabrique.MdpMysql);
-                
+
                 maConnexionSql.openConnection();
-                
-                Ocom = maConnexionSql.reqExec("delete from liaison where id '" + tb_id + "'");
+
+                Ocom = maConnexionSql.reqExec("delete from liaison where id = " + ls.id_li);
 
                 int i = Ocom.ExecuteNonQuery();
 
                 maConnexionSql.closeConnection();
             }
-        }*/
+
+            catch (Exception emp)
+            {
+
+                throw (emp);
+            }
+        }
 
 
         /*public void insertLiaison()
@@ -170,24 +176,15 @@ namespace sicilylines.DAL
             try
             {
 
-
                 maConnexionSql = ConnexionSql.getInstance(Fabrique.ProviderMysql, Fabrique.DataBaseMysql, Fabrique.UidMysql, Fabrique.MdpMysql);
-
 
                 maConnexionSql.openConnection();
 
-
                 Ocom = maConnexionSql.reqExec("update liaison set duree = '" + ls.la_duree + "' where id = " + ls.id_li);
-
 
                 int i = Ocom.ExecuteNonQuery();
 
-
-
                 maConnexionSql.closeConnection();
-
-
-
             }
 
             catch (Exception emp)
