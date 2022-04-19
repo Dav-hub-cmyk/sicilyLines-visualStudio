@@ -17,7 +17,7 @@ namespace sicilylines.DAL
         private MySqlCommand Ocom;
 
 
-        public Liaison getLiaison(int id_li)
+        public Liaison getLiaison(int num)
         {
 
             try
@@ -32,7 +32,7 @@ namespace sicilylines.DAL
                 maConnexionSql.openConnection();
 
 
-                Ocom = maConnexionSql.reqExec("Select * from client where numero = " + id_li);
+                Ocom = maConnexionSql.reqExec("Select * from client where numero = " + num);
 
 
                 MySqlDataReader reader1 = Ocom.ExecuteReader();
@@ -41,13 +41,13 @@ namespace sicilylines.DAL
                 while (reader1.Read())
                 {
 
-                    int num = (int)reader1.GetValue(0);
+                    int num_li = (int)reader1.GetValue(0);
                     string uneduree = (string)reader1.GetValue(1);
                     int un_id_secteur = (int)reader1.GetValue(2);
                     string port_dep = (string)reader1.GetValue(3);
                     string port_ar = (string)reader1.GetValue(3);
 
-                    li = new Liaison(num, uneduree, un_id_secteur, port_dep, port_ar);
+                    li = new Liaison(num_li, uneduree, un_id_secteur, port_dep, port_ar);
 
 
                 }
@@ -70,6 +70,69 @@ namespace sicilylines.DAL
             }
         }
 
+
+
+        public List<Liaison> getLiaisons()
+        {
+
+            List<Liaison> li = new List<Liaison>();
+
+            try
+            {
+
+                maConnexionSql = ConnexionSql.getInstance(Fabrique.ProviderMysql, Fabrique.DataBaseMysql, Fabrique.UidMysql, Fabrique.MdpMysql);
+
+
+                maConnexionSql.openConnection();
+
+
+                Ocom = maConnexionSql.reqExec("Select * from liaison");
+
+
+                MySqlDataReader reader = Ocom.ExecuteReader();
+
+                Liaison l;
+
+
+
+
+                while (reader.Read())
+                {
+
+                    int num_li = (int)reader.GetValue(0);
+                    string uneduree = (string)reader.GetValue(1);
+                    int un_id_secteur = (int)reader.GetValue(2);
+                    string port_dep = (string)reader.GetValue(3);
+                    string port_ar = (string)reader.GetValue(3);
+
+                    l = new Liaison(num_li, uneduree, un_id_secteur, port_dep, port_ar);
+
+                    li.Add(l);
+
+
+                }
+
+
+
+                reader.Close();
+
+                maConnexionSql.closeConnection();
+
+
+            }
+
+
+
+
+            catch (Exception emp)
+            {
+
+                MessageBox.Show(emp.Message);
+
+            }
+
+            return (li);
+        }
 
 
 
