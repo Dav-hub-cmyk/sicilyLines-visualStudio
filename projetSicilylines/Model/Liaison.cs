@@ -11,17 +11,17 @@ namespace sicilylines
     {
         private int id_liai;
         private string duree;
-        private int id_secteur;
-        private int port_depart;
-        private int port_arrivee;
+        private string secteur;
+        private string port_depart;
+        private string port_arrivee;
         
 
 
-        public Liaison(int id_li,string uneduree, int un_id_secteur, int port_dep, int port_ar)
+        public Liaison(int id_li,string uneduree, string unsecteur, string port_dep, string port_ar)
         {
             this.id_liai = id_li;
             this.duree = uneduree;
-            this.id_secteur = un_id_secteur;
+            this.secteur = unsecteur;
             this.port_depart = port_dep;
             this.port_arrivee = port_ar;
   
@@ -37,33 +37,33 @@ namespace sicilylines
 
         }
 
-        public string uneduree
+        public string la_duree
         {
             get { return this.duree; }
         }
 
-        public int un_id_secteur
+        public string le_secteur
         {
-            get { return this.id_secteur; }
+            get { return this.secteur; }
         }
 
-        public int port_dep
+        public string port_de_depart
         {
             get { return this.port_depart; }
         }
 
-        public int port_ar
+        public string port_d_arrivee
         {
             get { return this.port_arrivee; }
         }
 
-        public override string ToString()
+        /*public override string ToString()
 
         {
 
-            return (this.id_liai + "   " +this.id_secteur +" " + this.duree + " " + this.port_depart + " " + this.port_arrivee);
+            return (this.id_liai + "   " +this.duree +" "  +this.secteur+ " " + this.port_depart + " " + this.port_arrivee);
         }
-
+        */
 
 
     }
