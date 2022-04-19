@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using MySql.Data;
 using System.Windows.Forms;
+using sicilylines.DAL;
+
 
 namespace sicilylines.DAL
 {
