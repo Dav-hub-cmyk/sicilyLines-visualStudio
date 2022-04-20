@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using MySql.Data;
 using System.Windows.Forms;
 using sicilylines.DAL;
+using sicilylines;
 
 
 namespace sicilylines.DAL
@@ -131,7 +132,7 @@ namespace sicilylines.DAL
         }
 
 
-        public void deleteLiaison(Liaison ls)
+        /*public void deleteLiaison(Liaison ls)
         {
             try
             {
@@ -139,7 +140,7 @@ namespace sicilylines.DAL
 
                 maConnexionSql.openConnection();
 
-                Ocom = maConnexionSql.reqExec("delete from liaison where id = " + ls.id_li);
+                Ocom = maConnexionSql.reqExec("delete from liaison where id = " +ls.id_li);
 
                 int i = Ocom.ExecuteNonQuery();
 
@@ -151,7 +152,7 @@ namespace sicilylines.DAL
 
                 throw (emp);
             }
-        }
+        }*/
 
 
         /*public void insertLiaison()

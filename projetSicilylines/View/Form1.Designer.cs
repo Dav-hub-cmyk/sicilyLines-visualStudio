@@ -33,6 +33,7 @@ namespace sicilylines
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@ namespace sicilylines
             this.lb_portA = new System.Windows.Forms.Label();
             this.btn2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.actionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -103,6 +103,15 @@ namespace sicilylines
             this.label3.TabIndex = 3;
             this.label3.Text = "SicilyLines";
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(1226, 24);
+            this.menuStrip2.TabIndex = 4;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -133,6 +142,7 @@ namespace sicilylines
             this.btn1.TabIndex = 9;
             this.btn1.Text = "valider";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lb_id
             // 
@@ -268,15 +278,6 @@ namespace sicilylines
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // menuStrip2
-            // 
-            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1226, 24);
-            this.menuStrip2.TabIndex = 4;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
             // actionToolStripMenuItem
             // 
             this.actionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -306,6 +307,7 @@ namespace sicilylines
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
             this.modifierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.modifierToolStripMenuItem.Text = "modifier";
+            this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
             // 
             // Form1
             // 

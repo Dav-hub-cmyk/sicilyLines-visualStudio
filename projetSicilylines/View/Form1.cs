@@ -104,5 +104,23 @@ namespace sicilylines
             btn1.Visible = true;
             btn2.Visible = false;
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modifierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Liaison li;
+
+            li.la_duree = tb_duree.Text;
+
+            monManager.updateLiaisonDureeBD(li);
+
+            lstli = monManager.chargementLIBD();
+
+            */
+        }
     }
 }
