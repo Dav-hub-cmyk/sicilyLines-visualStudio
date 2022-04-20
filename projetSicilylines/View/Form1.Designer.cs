@@ -266,6 +266,7 @@ namespace sicilylines
             this.btn2.TabIndex = 19;
             this.btn2.Text = "Valider";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // menuStrip1
             // 

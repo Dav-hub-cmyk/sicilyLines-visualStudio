@@ -112,15 +112,30 @@ namespace sicilylines
 
         private void modifierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*Liaison li;
+            //rendre visible les textbox
+            tb_duree.Visible = true;
+            tb_id.Visible = false;
+            tb_portD.Visible = false;
+            tb_portA.Visible = false;
+            tb_sect.Visible = false;
+            //rendre visible les label
+            lb_duree.Visible = true;
+            lb_id.Visible = false;
+            lb_sec.Visible = false;
+            lb_portD.Visible = false;
+            lb_portA.Visible = false;
+            //rendre visible les bouttons
+            btn1.Visible = false;
+            btn2.Visible = true;
+        }
 
-            li.la_duree = tb_duree.Text;
-
-            monManager.updateLiaisonDureeBD(li);
-
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            Liaison liai = lstli[1];
+            monManager.updateLiaisonDureeBD(liai);
             lstli = monManager.chargementLIBD();
+            //rafraichirGridView(i);
 
-            */
         }
     }
 }

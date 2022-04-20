@@ -64,4 +64,3 @@ C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\bin\Debug\System.Me
 C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\bin\Debug\System.Numerics.Vectors.xml
 C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\projetSicilylines.csproj.CopyComplete
-C:\AppsicilyLines\sicilyLines-visualStudio\projetSicilylines\obj\Debug\sicilylines.FormLiaison.resources

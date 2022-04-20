@@ -27,6 +27,11 @@ namespace sicilylines.Controller
             liD.updateLiaisonDuree(ls);
         }
 
+        public void insertLBD(Liaison ls)
+        {
+            //liD.insertLiaison(ls);
+        }
+
 
     }
 }

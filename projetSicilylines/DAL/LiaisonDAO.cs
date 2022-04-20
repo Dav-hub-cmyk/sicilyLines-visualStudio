@@ -155,7 +155,7 @@ namespace sicilylines.DAL
         }*/
 
 
-        /*public void insertLiaison()
+        /*public void insertLiaison(Liaison ls)
         {
             try
             {
@@ -163,12 +163,18 @@ namespace sicilylines.DAL
 
                 maConnexionSql.openConnection();
 
-                Ocom = maConnexionSql.reqExec("insert into liaison(duree,secteur_id,port_depart_id,port_arrive_id)" +
-                    " values('tb_duree','tb_sect','tb_portD',tb_portA)");
+                Ocom = maConnexionSql.reqExec("insert into liaison(duree,port_depart_id, port_arrivee_id, le_secteur_id) " +
+                    "values ('" + (tb_duree.Text + "'," + tb_sect.Text + "," + tb_portD.Text + "," + tb_portA.Text + ")");
 
                 int i = Ocom.ExecuteNonQuery();
 
                 maConnexionSql.closeConnection();
+            }
+
+            catch (Exception emp)
+            {
+
+                throw (emp);
             }
         }*/
 
