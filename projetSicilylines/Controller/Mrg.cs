@@ -17,10 +17,10 @@ namespace sicilylines.Controller
             return (liD.getLiaisons());
         }
 
-        /*public List<Liaison> deletLIBD()
+        public void deletLIBD(Liaison ls)
         {
-            return (liD.deleteLiaison());
-        }*/
+            liD.deleteLiaison(ls);
+        }
 
         public void updateLiaisonDureeBD(Liaison ls)
         {

@@ -132,7 +132,7 @@ namespace sicilylines.DAL
         }
 
 
-        /*public void deleteLiaison(Liaison ls)
+        public void deleteLiaison(Liaison ls)
         {
             try
             {
@@ -152,7 +152,7 @@ namespace sicilylines.DAL
 
                 throw (emp);
             }
-        }*/
+        }
 
 
         /*public void insertLiaison(Liaison ls)

@@ -107,6 +107,9 @@ namespace sicilylines
 
         private void btn1_Click(object sender, EventArgs e)
         {
+            Liaison ls = new Liaison();
+            monManager.deletLIBD(ls);
+
 
         }
 

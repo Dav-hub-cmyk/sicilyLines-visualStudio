@@ -14,7 +14,7 @@ namespace sicilylines.DAL
     {
         private ConnexionSql maConnexionSql;
         private MySqlCommand Ocom;
-        public Liaison getTarifer(int num_id)
+       /* public Liaison getTarifer(int num_id)
         {
 
             try
@@ -63,7 +63,7 @@ namespace sicilylines.DAL
 
                 throw (emp);
             }
-        }
+        }*/
 
 
 

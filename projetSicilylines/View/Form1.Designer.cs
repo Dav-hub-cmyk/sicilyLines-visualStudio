@@ -138,7 +138,7 @@ namespace sicilylines
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(520, 205);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(75, 31);
+            this.btn1.Size = new System.Drawing.Size(90, 31);
             this.btn1.TabIndex = 9;
             this.btn1.Text = "valider";
             this.btn1.UseVisualStyleBackColor = false;
