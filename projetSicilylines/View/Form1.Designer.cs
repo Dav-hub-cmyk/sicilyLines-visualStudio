@@ -54,6 +54,7 @@ namespace sicilylines
             this.insererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_modif = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg1)).BeginInit();
@@ -260,7 +261,7 @@ namespace sicilylines
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(715, 572);
+            this.btn2.Location = new System.Drawing.Point(703, 576);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(87, 28);
             this.btn2.TabIndex = 19;
@@ -292,23 +293,34 @@ namespace sicilylines
             // insererToolStripMenuItem
             // 
             this.insererToolStripMenuItem.Name = "insererToolStripMenuItem";
-            this.insererToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.insererToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.insererToolStripMenuItem.Text = "Inserer";
             this.insererToolStripMenuItem.Click += new System.EventHandler(this.insererToolStripMenuItem_Click);
             // 
             // supprimerToolStripMenuItem
             // 
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.supprimerToolStripMenuItem.Text = "supprimer";
             this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.modifierToolStripMenuItem.Text = "modifier";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
+            // 
+            // btn_modif
+            // 
+            this.btn_modif.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modif.Location = new System.Drawing.Point(176, 658);
+            this.btn_modif.Name = "btn_modif";
+            this.btn_modif.Size = new System.Drawing.Size(100, 30);
+            this.btn_modif.TabIndex = 21;
+            this.btn_modif.Text = "Modifier";
+            this.btn_modif.UseVisualStyleBackColor = true;
+            this.btn_modif.Click += new System.EventHandler(this.btn_modif_Click);
             // 
             // Form1
             // 
@@ -317,6 +329,7 @@ namespace sicilylines
             this.BackgroundImage = global::projetSicilylines.Properties.Resources.sicile2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1225, 700);
+            this.Controls.Add(this.btn_modif);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.lb_portA);
             this.Controls.Add(this.lb_portD);
@@ -378,6 +391,7 @@ namespace sicilylines
         private System.Windows.Forms.ToolStripMenuItem insererToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supprimerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
+        private System.Windows.Forms.Button btn_modif;
     }
 }
 
