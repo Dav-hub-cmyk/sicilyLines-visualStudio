@@ -93,7 +93,9 @@
     <Compile Include="DAL\LiaisonDAO.cs" />
     <Compile Include="DAL\ConnexionSql.cs" />
     <Compile Include="DAL\Fabrique.cs" />
+    <Compile Include="DAL\TariferDAO.cs" />
     <Compile Include="Model\Liaison.cs" />
+    <Compile Include="Model\Tarifer.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

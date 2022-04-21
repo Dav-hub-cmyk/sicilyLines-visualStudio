@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace sicilylines
 {
+    [Serializable]
     class Tarifer
     {
         private int id;
-        private int id_liaison;
+        private int liason_id;
         private int period_id;
         private int type_id;
         private double tarif;
@@ -21,7 +22,7 @@ namespace sicilylines
         public Tarifer(int idTa, int idLi, int per_id, int ty_id, double tar)
         {
             this.id = idTa;
-            this.id_liaison = idLi;
+            this.liason_id = idLi;
             this.period_id = per_id;
             this.type_id = ty_id;
             this.tarif = tar;
@@ -35,7 +36,7 @@ namespace sicilylines
 
         public int id_liaison_tar
         {
-            get { return this.id_liaison; }
+            get { return this.liason_id; }
 
         }
         public int id_perdiode
